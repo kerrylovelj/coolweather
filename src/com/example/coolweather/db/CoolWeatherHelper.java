@@ -11,9 +11,9 @@ public class CoolWeatherHelper extends SQLiteOpenHelper {
 	 * 省级表的创建
 	 */
 	public static final String CREATE_PROVINCE = "create table Province("
-			+"id integer primary key autoincrement,"
-			+"province_name text,"
-			+"province_code text";
+			+"id integer primary key autoincrement, "
+			+"province_name text, "
+			+"province_code text)";
 	/**
 	 * 市级表的创建
 	 */
@@ -21,7 +21,7 @@ public class CoolWeatherHelper extends SQLiteOpenHelper {
 			+"id integer primary key autoincrement,"
 			+"city_name text,"
 			+"city_code text,"
-			+"province_id integer";
+			+"province_id integer)";
 	/**
 	 * 县级表的创建
 	 */
@@ -29,7 +29,7 @@ public class CoolWeatherHelper extends SQLiteOpenHelper {
 			+"id integer primary key autoincrement,"
 			+"county_name text,"
 			+"county_code text,"
-			+"city_id integer";
+			+"city_id integer)";
 	
 	public CoolWeatherHelper(Context context, String name,
 			CursorFactory factory, int version) {
